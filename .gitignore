@@ -1,54 +1,33 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Node
-node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# IDE
-.idea/
+### VS Code ###
 .vscode/
-*.swp
-*.swo
-
-# Docker
-.docker/
-
-# Kubernetes
-kubeconfig
-
-# Build
-build/
-dist/
-
-# Environment variables
-.env
-.env.*
-!.env.example
- 
