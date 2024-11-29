@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment 
 metadata:
-  name: DevOps-Practices-k8s-deployment
+  name: devops-practices-k8s-deployment
 spec:
   selector:
     matchLabels:
-      app: DevOps-Practices-k8s
+      app: devops-practices-k8s
   replicas: 1 
   template:
     metadata:
       labels:
-        app: DevOps-Practices-k8s
+        app: devops-practices-k8s
     spec:
       containers:
-        - name: DevOps-Practices-k8s
+        - name: devops-practices-k8s
           image: liberosis8803/devopslab2:latest
           imagePullPolicy: IfNotPresent
           ports:
@@ -25,10 +25,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: DevOps-Practices-k8s-svc
+  name: devops-practices-k8s-svc
 spec:
   selector:
-    app: DevOps-Practices-k8s
+    app: devops-practices-k8s
   ports:
     - protocol: "TCP"
       port: 8080 
